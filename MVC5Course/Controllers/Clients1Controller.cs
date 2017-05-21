@@ -43,6 +43,7 @@ namespace MVC5Course.Controllers
             {
                 client = client.Where(p => p.CreditRating == CreditRatingFilter);
             }
+
             if (!String.IsNullOrEmpty(LastNameFilter))
             {
                 client = client.Where(p => p.LastName == LastNameFilter);
@@ -53,6 +54,7 @@ namespace MVC5Course.Controllers
             ViewData.Model = client
                  .OrderByDescending(p => p.ClientId)
                  .ToPagedList(pageNo, 10);
+
             return View();
         }
 
