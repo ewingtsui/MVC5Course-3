@@ -1,0 +1,28 @@
+﻿@{ 
+    Layout = "";
+}
+
+
+@DateTime.Now;
+
+
+
+
+1 + 2 = @(1 + 2)
+
+
+
+
+@if (ViewBag.IsEnabled)
+    {
+    @:啓用
+    <br />
+
+    <span>Start</span>
+    }
+    else
+    {
+    @:停用
+    <br />
+    <text>Stop</text>
+    }
