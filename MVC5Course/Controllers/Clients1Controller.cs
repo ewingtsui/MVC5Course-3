@@ -101,6 +101,7 @@ namespace MVC5Course.Controllers
                 return HttpNotFound();
             }
 
+            //下拉式選單的值
             var items = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             ViewBag.CreditRating = new SelectList(items);
 
